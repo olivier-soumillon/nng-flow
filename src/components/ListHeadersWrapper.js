@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-const HeadersWrapper = styled.div`
+const ListHeadersWrapper = styled.div`
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
 `
 
-export default HeadersWrapper
+export default ListHeadersWrapper

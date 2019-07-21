@@ -15,7 +15,6 @@ class BirthDateValidationProvider extends Component {
 
   isBirthDateValid = (birthDate) => {
     const cleanBirthDate = birthDate.replace(/[^0-9]+/g, '')
-    console.log('cleanBirthDate', cleanBirthDate)
     return cleanBirthDate.length === 8 && moment(cleanBirthDate, CLEAN_BIRTH_DATE_FORMAT).isValid()
   }
 
@@ -51,6 +50,8 @@ class BirthDateValidationProvider extends Component {
   }
 
   render () {
+    console.log('BirthDateValidationProvider :: render')
+
     const bundle = {
       onBirthDateChange: this.onBirthDateChange,
       birthDate: this.state.birthDate,
@@ -67,4 +68,4 @@ BirthDateValidationProvider.propTypes = {
   children: PropTypes.func.isRequired
 }
 
-export default BirthDateValidationProvider;
+export default BirthDateValidationProvider

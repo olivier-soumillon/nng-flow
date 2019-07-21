@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {usedNationalNumbers, NationalNumbersContext} from './Context'
 import Content from './Content'
 
-class App extends Component {
+class WithContext extends Component {
   addUsedNationalNumber = (nationalNumber) => {
     console.log('addUsedNationalNumber', nationalNumber)
     this.setState(prevState => ({

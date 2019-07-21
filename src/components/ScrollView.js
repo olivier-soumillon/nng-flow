@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
-const RowWrapper = styled.div`
+const ScrollView = styled.div`
   flex-grow: 1;
-  background-color: green;
   overflow: auto;
+  display: flex;
+  flex-direction: row;
 `
 
-export default RowWrapper
+export default ScrollView

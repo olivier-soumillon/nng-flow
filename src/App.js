@@ -1,12 +1,10 @@
 import React from 'react'
-import { UserProvider } from './Context'
+import Content from './Content'
 
 function App() {
-  const user = { name: 'Tania', loggedIn: true }
-
   return (
-    <UserProvider value={user}>
-      <HomePage />
-    </UserProvider>
+    <Content />
   )
 }
+
+export default App

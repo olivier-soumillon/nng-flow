@@ -15,7 +15,7 @@ const SERIAL_NUMBER_SIZE = 3
 const CHECKSUM_SIZE = 2
 const CHECKSUM_BASE = 97
 
-class NationalNumberCollectionProvider extends PureComponent {
+class NationalNumbersProvider extends PureComponent {
   concatChecksum = (formattedBirthDate, formattedSerialNumber) => {
     const nationalNumberPrefix = `${formattedBirthDate}${formattedSerialNumber}`
     const checkSum = CHECKSUM_BASE - Number(nationalNumberPrefix) % CHECKSUM_BASE
@@ -50,6 +50,8 @@ class NationalNumberCollectionProvider extends PureComponent {
   render () {
     const collection = this.generateNationalNumbers(this.props.birthDate)
 
+    console.log('NationalNumbersProvider :: render :: collection', collection)
+
     const bundle = {
       femaleNationalNumbers: collection[GENDER_KEY_FEMALE],
       maleNationalNumbers: collection[GENDER_KEY_MALE]
@@ -59,9 +61,9 @@ class NationalNumberCollectionProvider extends PureComponent {
   }
 }
 
-NationalNumberCollectionProvider.propTypes = {
+NationalNumbersProvider.propTypes = {
   birthDate: PropTypes.string.isRequired,
   children: PropTypes.func.isRequired
 }
 
-export default NationalNumberCollectionProvider
+export default NationalNumbersProvider
