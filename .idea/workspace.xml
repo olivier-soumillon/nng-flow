@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd7f0591-21e7-4f4e-ae76-349bbcfd152b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/GlobalStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FormPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ScrollView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ScrollView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TextField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parts/DefaultPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/DefaultPanel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parts/NationalNumberItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/NationalNumberItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parts/ResultPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/ResultPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderProps/BirthDateValidationProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderProps/BirthDateValidationProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderProps/NationalNumbersProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderProps/NationalNumbersProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/withContext.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/parts/NationalNumberItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -111,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+            <state relative-caret-position="476">
+              <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -193,10 +178,10 @@
         <option value="$PROJECT_DIR$/src/components/ScrollView.js" />
         <option value="$PROJECT_DIR$/src/parts/DefaultPanel.js" />
         <option value="$PROJECT_DIR$/src/components/TextField.js" />
-        <option value="$PROJECT_DIR$/src/parts/NationalNumberItem.js" />
         <option value="$PROJECT_DIR$/src/GlobalStyle.js" />
         <option value="$PROJECT_DIR$/src/components/Layout.js" />
         <option value="$PROJECT_DIR$/src/Content.js" />
+        <option value="$PROJECT_DIR$/src/parts/NationalNumberItem.js" />
       </list>
     </option>
   </component>
@@ -294,12 +279,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563703786525</updated>
       <workItem from="1563703801356" duration="21805000" />
-      <workItem from="1563726802372" duration="10158000" />
+      <workItem from="1563726802372" duration="10596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31963000" />
+    <option name="totallyTimeSpent" value="32401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -560,13 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parts/NationalNumberItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GlobalStyle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -596,11 +574,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+        <state relative-caret-position="476">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parts/NationalNumberItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>

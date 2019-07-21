@@ -7,6 +7,7 @@ import { NationalNumberContext } from '../Context'
 const NationalNumberButton = styled.button`
   background-color: ${props => props.backgroundColor};
   color: #ecf0f1;
+  cursor: pointer;
   border: 0;
   padding: 10px;
   min-height: 40px;
