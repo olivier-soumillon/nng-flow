@@ -10,6 +10,9 @@ import BirthDateValidationProvider from './renderProps/BirthDateValidationProvid
 import Footer from './components/Footer'
 import ResultPanel from './parts/ResultPanel'
 import Layout from './components/Layout'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
+import { toast } from 'react-toastify'
+import Link from './components/Link'
 
 const INPUT_BIRTH_DATE_MASK = '99/99/9999'
 
@@ -43,7 +46,13 @@ class App extends PureComponent {
                              isBirthDateChanging={isBirthDateChanging}
                              isBirthDateValid={isBirthDateValid}
                              birthDate={birthDate}/>
-                <Footer>Developed with <FontAwesomeIcon icon={faHeart} color='#9b59b6' /> by Olivier Soumillon</Footer>
+                <Footer>
+                  Developed with <FontAwesomeIcon icon={faHeart} color='#9b59b6' /> by&nbsp;
+                  <CopyToClipboard text={'olivier.soumillon@gmail.com'}
+                                   onCopy={() => {toast.success(`You just copied my e-mail address !`)}}>
+                    <Link>Olivier Soumillon</Link>
+                  </CopyToClipboard>
+                </Footer>
               </>
             )
           }
