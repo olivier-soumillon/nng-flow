@@ -13,6 +13,10 @@ const NationalNumberButton = styled.button`
   min-height: 40px;
   font-weight: bold;
   transition: background-color 300ms;
+  
+  &:hover:not(:active) {
+    background-color: #3498db;
+  }
 `
 
 NationalNumberButton.defaultProps = {
