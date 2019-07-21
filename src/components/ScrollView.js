@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const ScrollView = styled.div`
   flex-grow: 1;
-  overflow: auto;
+  overflow: overlay;
   display: flex;
   flex-direction: row;
   border: 1px solid #34495e;
