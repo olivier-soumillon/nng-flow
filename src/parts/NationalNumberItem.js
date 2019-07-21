@@ -6,7 +6,7 @@ import { NationalNumberContext } from '../Context'
 
 const NationalNumberButton = styled.button`
   background-color: ${props => props.backgroundColor};
-  color: #ecf0f1;
+  color: white;
   cursor: pointer;
   border: 0;
   padding: 10px;
@@ -15,7 +15,7 @@ const NationalNumberButton = styled.button`
   transition: background-color 300ms;
   
   &:hover:not(:active) {
-    background-color: #3498db;
+    background-color: #2ecc71;
   }
 `
 
@@ -30,7 +30,7 @@ const NationalNumberItem = ({ children: nationalNumber }) => {
       {
         ({lastUsedNationalNumber, updateLastUsedNationalNumber}) => {
           const backgroundColor = lastUsedNationalNumber === nationalNumber
-            ? '#8e44ad'
+            ? '#3498db'
               : hasBeenUsed
               ? '#95a5a6'
               : 'transparent'

@@ -2,7 +2,7 @@ import { Component } from 'react'
 import PropTypes from 'prop-types'
 import moment from 'moment'
 
-const VALIDATION_DELAY = 700
+const VALIDATION_DELAY = 500
 const CLEAN_BIRTH_DATE_FORMAT = 'DDMMYYYY'
 
 class BirthDateValidationProvider extends Component {

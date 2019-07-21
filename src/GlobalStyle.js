@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   body, #root {
     margin: 0;
     background-color: #34495e;
-    color: #bdc3c7;
+    color: #ecf0f1;
     height: 100vh;
     display: flex;
     flex-direction: column;
