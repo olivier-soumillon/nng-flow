@@ -6,6 +6,7 @@ const ListHeader = styled.header`
   padding: 20px 50px;
   flex-direction: column;
   align-items: center;
+  border: 1px solid #34495e;
 `
 
 export default ListHeader

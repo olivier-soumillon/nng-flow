@@ -50,8 +50,6 @@ class NationalNumbersProvider extends PureComponent {
   render () {
     const collection = this.generateNationalNumbers(this.props.birthDate)
 
-    console.log('NationalNumbersProvider :: render :: collection', collection)
-
     const bundle = {
       femaleNationalNumbers: collection[GENDER_KEY_FEMALE],
       maleNationalNumbers: collection[GENDER_KEY_MALE]

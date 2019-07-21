@@ -7,7 +7,7 @@ const DefaultPanel = () => {
   return (
     <Panel>
       <FontAwesomeIcon size="2x" icon={faArrowUp}/>
-      Please enter a birth date, thx !
+      Please enter a birth date :)
     </Panel>
   )
 }

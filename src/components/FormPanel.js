@@ -5,6 +5,7 @@ const FormPanel = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px 50px;
+  border: 1px solid #34495e;
 `
 
 export default FormPanel

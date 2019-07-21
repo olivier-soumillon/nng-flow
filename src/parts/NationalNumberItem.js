@@ -5,11 +5,13 @@ import styled from 'styled-components'
 import { NationalNumberContext } from '../Context'
 
 const NationalNumberButton = styled.button`
-  background-color: ${props => props.backgroundColor}
+  background-color: ${props => props.backgroundColor};
+  color: #ecf0f1;
   border: 0;
   padding: 10px;
   min-height: 40px;
   font-weight: bold;
+  transition: background-color 300ms;
 `
 
 NationalNumberButton.defaultProps = {
@@ -23,9 +25,9 @@ const NationalNumberItem = ({ children: nationalNumber }) => {
       {
         ({lastUsedNationalNumber, updateLastUsedNationalNumber}) => {
           const backgroundColor = lastUsedNationalNumber === nationalNumber
-            ? 'limegreen'
-            : hasBeenUsed
-              ? 'lightgreen'
+            ? '#8e44ad'
+              : hasBeenUsed
+              ? '#95a5a6'
               : 'transparent'
 
           return (

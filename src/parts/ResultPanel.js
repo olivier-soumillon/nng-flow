@@ -23,8 +23,6 @@ const ResultPanel = ({ birthDate, isBirthDatePristine, isBirthDateChanging, isBi
     <NationalNumbersProvider birthDate={birthDate}>
       {
         ({ femaleNationalNumbers, maleNationalNumbers }) => {
-          console.log('ResultPanel :: femaleNationalNumbers', femaleNationalNumbers)
-          console.log('ResultPanel :: maleNationalNumbers', maleNationalNumbers)
           return (
             <NationalNumbersPanel femaleNationalNumbers={femaleNationalNumbers}
                                   maleNationalNumbers={maleNationalNumbers}/>

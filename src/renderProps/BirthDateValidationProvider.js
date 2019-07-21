@@ -50,8 +50,6 @@ class BirthDateValidationProvider extends Component {
   }
 
   render () {
-    console.log('BirthDateValidationProvider :: render')
-
     const bundle = {
       onBirthDateChange: this.onBirthDateChange,
       birthDate: this.state.birthDate,
