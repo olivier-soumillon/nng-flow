@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
-const Link = styled.span`
+const a = styled.span`
   text-decoration: underline;
+  color: white;
   cursor: pointer;
 `
 

@@ -47,11 +47,7 @@ class App extends PureComponent {
                              isBirthDateValid={isBirthDateValid}
                              birthDate={birthDate}/>
                 <Footer>
-                  Developed with <FontAwesomeIcon icon={faHeart} color='#9b59b6' /> by&nbsp;
-                  <CopyToClipboard text={'olivier.soumillon@gmail.com'}
-                                   onCopy={() => {toast.success(`You just copied my e-mail address !`)}}>
-                    <Link>Olivier Soumillon</Link>
-                  </CopyToClipboard>
+                  Developed with <FontAwesomeIcon icon={faHeart} color='#9b59b6' /> by Olivier Soumillon
                 </Footer>
               </>
             )
