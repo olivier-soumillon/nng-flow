@@ -7,19 +7,29 @@ import ScrollView from '../components/ScrollView'
 import NationalNumbersList from './NationalNumbersList'
 import NationalNumberContextProvider from '../Context'
 import Text from '../components/Text'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
+import { toast } from 'react-toastify'
+
+const formatListToCopy = (list) => list.join(',').replace(/,/g, '\r\n')
 
 const NationalNumbersPanel = ({ femaleNationalNumbers, maleNationalNumbers }) => {
   return (
     <>
       <ListHeadersWrapper>
-        <ListHeader backgroundColor='skyblue'>
-          <FontAwesomeIcon size="2x" icon={faMars}/>
-          <Text>Male</Text>
-        </ListHeader>
-        <ListHeader backgroundColor='pink'>
-          <FontAwesomeIcon size="2x" icon={faVenus}/>
-          <Text>Female</Text>
-        </ListHeader>
+        <CopyToClipboard text={formatListToCopy(maleNationalNumbers)}
+                         onCopy={() => {toast.success(`Whole male list copied !`)}}>
+          <ListHeader backgroundColor='skyblue'>
+            <FontAwesomeIcon size="2x" icon={faMars}/>
+            <Text>Male</Text>
+          </ListHeader>
+        </CopyToClipboard>
+        <CopyToClipboard text={formatListToCopy(femaleNationalNumbers)}
+                         onCopy={() => {toast.success(`Whole female list copied !`)}}>
+          <ListHeader backgroundColor='pink'>
+            <FontAwesomeIcon size="2x" icon={faVenus}/>
+            <Text>Female</Text>
+          </ListHeader>
+        </CopyToClipboard>
       </ListHeadersWrapper>
       <ScrollView>
         <NationalNumberContextProvider>

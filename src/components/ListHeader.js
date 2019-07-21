@@ -7,6 +7,11 @@ const ListHeader = styled.header`
   flex-direction: column;
   align-items: center;
   border: 1px solid #34495e;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #2ecc71;
+  }
 `
 
 export default ListHeader

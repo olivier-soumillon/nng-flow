@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd7f0591-21e7-4f4e-ae76-349bbcfd152b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Text.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parts/DefaultPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/DefaultPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parts/ErrorPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/ErrorPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parts/LoadingPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/LoadingPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parts/NationalNumberItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/NationalNumberItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListHeader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parts/NationalNumbersPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/parts/NationalNumbersPanel.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -57,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -65,6 +57,24 @@
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ListHeader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ListHeadersWrapper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -81,8 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parts/NationalNumberItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+            <state relative-caret-position="102">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="29" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -93,32 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parts/NationalNumbersPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderProps/BirthDateValidationProvider.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/parts/ResultPanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="219">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -182,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/Context.js" />
         <option value="$PROJECT_DIR$/src/renderProps/NationalNumbersProvider.js" />
         <option value="$PROJECT_DIR$/src/withContext.js" />
-        <option value="$PROJECT_DIR$/src/components/ListHeader.js" />
         <option value="$PROJECT_DIR$/src/components/FormPanel.js" />
         <option value="$PROJECT_DIR$/src/components/Panel.js" />
         <option value="$PROJECT_DIR$/src/components/Footer.js" />
@@ -197,11 +182,12 @@
         <option value="$PROJECT_DIR$/src/parts/LoadingPanel.js" />
         <option value="$PROJECT_DIR$/src/parts/ErrorPanel.js" />
         <option value="$PROJECT_DIR$/src/parts/ResultPanel.js" />
-        <option value="$PROJECT_DIR$/src/parts/NationalNumbersPanel.js" />
         <option value="$PROJECT_DIR$/src/components/Text.js" />
         <option value="$PROJECT_DIR$/src/Content.js" />
         <option value="$PROJECT_DIR$/src/parts/NationalNumberItem.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/parts/NationalNumbersPanel.js" />
+        <option value="$PROJECT_DIR$/src/components/ListHeader.js" />
       </list>
     </option>
   </component>
@@ -299,12 +285,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563703786525</updated>
       <workItem from="1563703801356" duration="21805000" />
-      <workItem from="1563726802372" duration="12755000" />
+      <workItem from="1563726802372" duration="14054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34560000" />
+    <option name="totallyTimeSpent" value="35859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -337,13 +323,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.css" />
     <entry file="file://$PROJECT_DIR$/src/components/NationalNumberCollectionRenderer.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/ListHeadersWrapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ListWrapper.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Loader.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -484,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ListHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Label.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -548,16 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/parts/NationalNumbersPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -592,6 +554,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ListHeadersWrapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parts/NationalNumbersPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/parts/NationalNumbersList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -604,21 +593,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parts/NationalNumberItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        <state relative-caret-position="102">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="29" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ListHeader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
