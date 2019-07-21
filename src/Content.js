@@ -10,9 +10,6 @@ import BirthDateValidationProvider from './renderProps/BirthDateValidationProvid
 import Footer from './components/Footer'
 import ResultPanel from './parts/ResultPanel'
 import Layout from './components/Layout'
-import { CopyToClipboard } from 'react-copy-to-clipboard'
-import { toast } from 'react-toastify'
-import Link from './components/Link'
 
 const INPUT_BIRTH_DATE_MASK = '99/99/9999'
 
