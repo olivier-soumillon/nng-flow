@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import styled from 'styled-components'
 import { NationalNumberContext } from '../Context'
+import { toast } from 'react-toastify'
 
 const NationalNumberButton = styled.button`
   background-color: ${props => props.backgroundColor};
@@ -37,6 +38,7 @@ const NationalNumberItem = ({ children: nationalNumber }) => {
 
           return (
             <CopyToClipboard text={nationalNumber} onCopy={() => {
+              toast.success(`${nationalNumber} copied !`)
               updateLastUsedNationalNumber(nationalNumber)
               setUsage(true)
             }}>
