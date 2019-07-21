@@ -5,6 +5,7 @@ import ListHeadersWrapper from '../components/ListHeadersWrapper'
 import ListHeader from '../components/ListHeader'
 import ScrollView from '../components/ScrollView'
 import NationalNumbersList from './NationalNumbersList'
+import NationalNumberContextProvider from '../Context'
 
 const NationalNumbersPanel = ({ femaleNationalNumbers, maleNationalNumbers }) => {
   return (
@@ -20,8 +21,10 @@ const NationalNumbersPanel = ({ femaleNationalNumbers, maleNationalNumbers }) =>
         </ListHeader>
       </ListHeadersWrapper>
       <ScrollView>
-        <NationalNumbersList nationalNumbers={maleNationalNumbers}/>
-        <NationalNumbersList nationalNumbers={femaleNationalNumbers}/>
+        <NationalNumberContextProvider>
+          <NationalNumbersList nationalNumbers={maleNationalNumbers}/>
+          <NationalNumbersList nationalNumbers={femaleNationalNumbers}/>
+        </NationalNumberContextProvider>
       </ScrollView>
     </>
   )

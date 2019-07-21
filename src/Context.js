@@ -6,7 +6,6 @@ export const NationalNumberContext = React.createContext(initialContext)
 
 class NationalNumberContextProvider extends Component {
   updateLastUsedNationalNumber = (nationalNumber) => {
-    console.log('addUsedNationalNumber', nationalNumber)
     this.setState({
       lastUsedNationalNumber: nationalNumber
     })
