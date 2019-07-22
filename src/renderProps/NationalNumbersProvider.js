@@ -19,8 +19,8 @@ class NationalNumbersProvider extends PureComponent {
   concatChecksum = (birthDate, formattedSerialNumber) => {
     const formattedBirthDate = birthDate.format(NORMALIZED_BIRTH_DATE_FORMAT)
     const nationalNumberPrefix = `${formattedBirthDate}${formattedSerialNumber}`
-    const millenialPrefix = birthDate.year() >= 2000 ? birthDate.format('YYYY')[0] : ''
-    const checkSum = CHECKSUM_BASE - Number(`${millenialPrefix}${nationalNumberPrefix}`) % CHECKSUM_BASE
+    const millenialMod = birthDate.year() >= 2000 ? 2000000000 : 0
+    const checkSum = CHECKSUM_BASE - (millenialMod + Number(nationalNumberPrefix)) % CHECKSUM_BASE
     const formattedCheckSum = padNumber(checkSum, CHECKSUM_SIZE)
 
     return `${nationalNumberPrefix}${formattedCheckSum}`
