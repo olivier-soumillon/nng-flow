@@ -1,11 +1,13 @@
+// @flow
+
 import { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import moment from 'moment'
 import range from 'lodash.range'
 
-const isOddNumber = (number) => number % 2 === 0
-const padNumber = (number, size) => (`000${number}`).slice(-size)
-const formatNationalNumber = (nationalNumber) => nationalNumber.replace(/^(\d{2})(\d{2})(\d{2})(\d{3})(\d{2}).*/, '$1.$2.$3-$4.$5')
+const isOddNumber = (number: number): boolean => number % 2 === 0
+const padNumber = (number: number, size: number): string => (`000${number}`).slice(-size)
+const formatNationalNumber = (nationalNumber: string): string => nationalNumber.replace(/^(\d{2})(\d{2})(\d{2})(\d{3})(\d{2}).*/, '$1.$2.$3-$4.$5')
 
 const GENDER_KEY_FEMALE = 'female'
 const GENDER_KEY_MALE = 'male'
@@ -15,8 +17,12 @@ const SERIAL_NUMBER_SIZE = 3
 const CHECKSUM_SIZE = 2
 const CHECKSUM_BASE = 97
 
-class NationalNumbersProvider extends PureComponent {
-  concatChecksum = (birthDate, formattedSerialNumber) => {
+type Props = {
+  birthDate: string,
+  children: Function
+}
+class NationalNumbersProvider extends PureComponent<Props> {
+  concatChecksum = (birthDate: Object, formattedSerialNumber: string): string => {
     const formattedBirthDate = birthDate.format(NORMALIZED_BIRTH_DATE_FORMAT)
     const nationalNumberPrefix = `${formattedBirthDate}${formattedSerialNumber}`
     const millenialMod = birthDate.year() >= 2000 ? 2000000000 : 0
@@ -26,18 +32,20 @@ class NationalNumbersProvider extends PureComponent {
     return `${nationalNumberPrefix}${formattedCheckSum}`
   }
 
-  populateNationalNumbersCollection = (birthDate) => (collection, serialNumber) => {
-    const genderKey = isOddNumber(serialNumber) ? GENDER_KEY_FEMALE : GENDER_KEY_MALE
-    const formattedSerialNumber = padNumber(serialNumber, SERIAL_NUMBER_SIZE)
-    const nationalNumber = this.concatChecksum(birthDate, formattedSerialNumber)
-    const formattedNationalNumber = formatNationalNumber(nationalNumber)
-    return {
-      ...collection,
-      [genderKey]: [...collection[genderKey], formattedNationalNumber]
+  populateNationalNumbersCollection = (birthDate: Object): Function => {
+    return (collection: Object, serialNumber: number): Object => {
+      const genderKey = isOddNumber(serialNumber) ? GENDER_KEY_FEMALE : GENDER_KEY_MALE
+      const formattedSerialNumber = padNumber(serialNumber, SERIAL_NUMBER_SIZE)
+      const nationalNumber = this.concatChecksum(birthDate, formattedSerialNumber)
+      const formattedNationalNumber = formatNationalNumber(nationalNumber)
+      return {
+        ...collection,
+        [genderKey]: [...collection[genderKey], formattedNationalNumber]
+      }
     }
   }
 
-  generateNationalNumbers = (birthDate) => {
+  generateNationalNumbers = (birthDate: string): Object => {
     const date = moment(birthDate, INPUT_BIRTH_DATE_FORMAT)
 
     const collection = {
