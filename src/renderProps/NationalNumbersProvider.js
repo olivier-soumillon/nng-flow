@@ -17,12 +17,14 @@ const SERIAL_NUMBER_SIZE = 3
 const CHECKSUM_SIZE = 2
 const CHECKSUM_BASE = 97
 
+/*::
 type Props = {
   birthDate: string,
   children: Function
 }
-class NationalNumbersProvider extends PureComponent<Props> {
-  concatChecksum = (birthDate: Object, formattedSerialNumber: string): string => {
+*/
+class NationalNumbersProvider extends PureComponent/*:: <Props>*/ {
+  concatChecksum = (birthDate/*: Object*/, formattedSerialNumber/*: string*/)/*: string*/ => {
     const formattedBirthDate = birthDate.format(NORMALIZED_BIRTH_DATE_FORMAT)
     const nationalNumberPrefix = `${formattedBirthDate}${formattedSerialNumber}`
     const millenialMod = birthDate.year() >= 2000 ? 2000000000 : 0
@@ -32,8 +34,8 @@ class NationalNumbersProvider extends PureComponent<Props> {
     return `${nationalNumberPrefix}${formattedCheckSum}`
   }
 
-  populateNationalNumbersCollection = (birthDate: Object): Function => {
-    return (collection: Object, serialNumber: number): Object => {
+  populateNationalNumbersCollection = (birthDate/*: Object*/)/*: Function*/ => {
+    return (collection/*: Object*/, serialNumber/*: number*/)/*: Object*/ => {
       const genderKey = isOddNumber(serialNumber) ? GENDER_KEY_FEMALE : GENDER_KEY_MALE
       const formattedSerialNumber = padNumber(serialNumber, SERIAL_NUMBER_SIZE)
       const nationalNumber = this.concatChecksum(birthDate, formattedSerialNumber)
@@ -45,7 +47,7 @@ class NationalNumbersProvider extends PureComponent<Props> {
     }
   }
 
-  generateNationalNumbers = (birthDate: string): Object => {
+  generateNationalNumbers = (birthDate/*: string*/)/*: Object*/ => {
     const date = moment(birthDate, INPUT_BIRTH_DATE_FORMAT)
 
     const collection = {

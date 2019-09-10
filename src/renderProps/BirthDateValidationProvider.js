@@ -1,3 +1,5 @@
+// @flow
+
 import { Component } from 'react'
 import PropTypes from 'prop-types'
 import moment from 'moment'
@@ -5,16 +7,22 @@ import moment from 'moment'
 const VALIDATION_DELAY = 500
 const CLEAN_BIRTH_DATE_FORMAT = 'DDMMYYYY'
 
+/*::
 type Props = {
   children: Function
 }
+*/
+
+/*::
 type State = {
   birthDate: string,
   isBirthDatePristine: boolean,
   isBirthDateChanging: boolean,
   isBirthDateValid: boolean
 }
-class BirthDateValidationProvider extends Component<Props, State> {
+*/
+
+class BirthDateValidationProvider extends Component/*:: <Props, State>*/ {
   state = {
     birthDate: '',
     isBirthDatePristine: true,
@@ -22,7 +30,9 @@ class BirthDateValidationProvider extends Component<Props, State> {
     isBirthDateValid: true
   }
 
-  isBirthDateValid = (birthDate: String): boolean => {
+  validationTimeout = null
+
+  isBirthDateValid = (birthDate/*: string*/) /*: boolean*/ => {
     const cleanBirthDate = birthDate.replace(/[^0-9]+/g, '')
     return cleanBirthDate.length === 8 && moment(cleanBirthDate, CLEAN_BIRTH_DATE_FORMAT).isValid()
   }
@@ -47,7 +57,7 @@ class BirthDateValidationProvider extends Component<Props, State> {
     this.validationTimeout = setTimeout(this.validateBirthDate, VALIDATION_DELAY)
   }
 
-  onBirthDateChange = (event: Object) => {
+  onBirthDateChange = (event/*: Object*/) => {
     const changes = {
       birthDate: event.target.value,
       isBirthDatePristine: false,
